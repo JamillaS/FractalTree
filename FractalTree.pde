@@ -37,8 +37,10 @@ public void drawBranches(int x,int y, double branchLength, double angle)
 	int endX2 = (int)(branchLength * Math.cos(angle2) + x);
 	int endY2 = (int)(branchLength * Math.sin(angle2) + y);
 
-	line(x, y, endX1, endY1);
 	stroke((int)(Math.random() * 255), 197, (int)(Math.random() * 255));
+	line(x, y, endX1, endY1);
+	
+	
 	line(x, y, endX2, endY2);
 	
 	if(branchLength > smallestBranch)
